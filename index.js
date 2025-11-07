@@ -1,7 +1,7 @@
 const express = require('express'); // Import the Express library
-const nodeFetch = require('node-fetch');
+// const nodeFetch = require('node-fetch');
 const path = require('path'); 
-const fetch = nodeFetch.default || nodeFetch;  
+// const fetch = nodeFetch.default || nodeFetch;  
 const app = express(); // Create an Express application instance
 const port = 3000; // Define the port the server will listen on
 

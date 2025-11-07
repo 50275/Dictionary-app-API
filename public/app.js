@@ -12,7 +12,7 @@ document.getElementById('button').addEventListener("click", async () => {
         let response = await fetch(`http://localhost:3000/api?word=${value}`);
         if (!response.ok){
             p.textContent = `Error Status: ${response.status}.`;
-            document.body.style.backgroundColor = "lightcoral";
+            document.body.style.backgroundColor = "FFAAAA";
             return;
         }
         let data = await response.json(); 
@@ -39,10 +39,10 @@ document.getElementById('button').addEventListener("click", async () => {
                 });
             });
         } 
-        document.body.style.backgroundColor = "#FAFADF"; 
+        document.body.style.backgroundColor = "FAFADF"; 
     } catch (error) {
         console.log(error); 
         p.textContent = "Maybe the server is down. " + error.toString();
-        document.body.style.backgroundColor = "lightcoral";
+        document.body.style.backgroundColor = "FFAAAA";
     }
 });
