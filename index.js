@@ -8,10 +8,6 @@ const port = 3000; // Define the port the server will listen on
 app.use(express.json());
 app.use(express.static('public'))
 
-// app.get('/', (req, res) => {
-//     res.sendFile('index.html')
-// })
-
 app.get('/api', async function(req, res){
     // Only if the word exists
     if(req.query.word) {
@@ -19,14 +15,15 @@ app.get('/api', async function(req, res){
         try {
             let response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
             if (!response.ok){
-                res.send(`I wasn't able to find that because of an error: ${response}`); 
+                res.send(JSON.stringify(response)); 
                 return; 
             }
             res.json(await response.json());
             return; 
         }
         catch(error){
-            res.send(`I wasn't able to find that. ${error}`)
+            // TODO: is that even valid? 
+            res.send(JSON.stringify(error))
             return; 
         }
     } else {  

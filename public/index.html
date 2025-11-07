@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <title>express-dictionary</title>
 <head>
-<!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <input type="text" id="input" value="tungsten"></input>
-    <button id="button">button</button>
-    <p id="p">output</p>
-    <ul id="ul">
+    <span>
+        <h3>Dictionary</h3>
+        <h5>Powered by https://dictionaryapi.dev/</h5>
+        <p>To get started, type something into the text box and hit Search!</p>
+        <div>
+            <input type="text" id="input" value="tungsten" maxlength="2000"></input>
+            <input type="button" id="button" value="Search"></button>
+        </div>
+        <p id="p"></p>
+        <p>Definitions</p>
+        <ul id="ul">
+    
+        </ul>
+        <script src="app.js"></script>
+    </span>
 
-    </ul>
-    <script src="app.js"></script>
+    <footer>
+        <a target="_blank" href="https://github.com/50275/Dictionary-app-API">https://github.com/50275/Dictionary-app-API</a>
+    </footer>
 </body>
