@@ -9,7 +9,7 @@ document.getElementById('button').addEventListener("click", async () => {
     let ul = document.getElementById("ul"); 
     ul.innerHTML = ""; 
     try {
-        let response = await fetch(`http://localhost:3000/api?word=${value}`);
+        let response = await fetch(`${window.location.origin}/api?word=${value}`);
         if (!response.ok){
             p.textContent = `Error Status: ${response.status}.`;
             document.body.style.backgroundColor = "FFAAAA";
