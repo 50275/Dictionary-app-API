@@ -1,0 +1,44 @@
+input{
+    padding: 0.6rem 1.2rem;
+    margin-top: 1rem;
+    /* border: 0.3rem;  */
+    border-radius: 0.3rem;
+    /* background-color: white; */ /* it already stands out :) */
+    font-size: 0.8rem; 
+}
+#button:hover{
+    color: brown;
+    background-color: lightgray;
+}
+#button:focus{
+    background-color: #AAAAAA;
+}
+#text{
+    /* font-size: 2rem;  */
+    height: 2rem; 
+}
+footer{
+    background-color: burlywood; 
+    text-align: center;
+}
+span{
+    text-align: center;
+}
+/* body{
+    display: flex; 
+    justify-content: space-around;
+} */
+ul, li{
+    list-style-type: none; 
+    margin: 0px; 
+    padding: 0px; 
+}
+html {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+  
