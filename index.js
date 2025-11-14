@@ -8,7 +8,7 @@ const port = 3000; // Define the port the server will listen on
 app.use(express.json());
 app.use(express.static('public'))
 
-app.get('/api', async function(req, res){
+app.get('/api/:word', async function(req, res){
     // Only if the word exists
     if(req.query.word) {
         let word = req.query.word.toLowerCase().trim(); 
